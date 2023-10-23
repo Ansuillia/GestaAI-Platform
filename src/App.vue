@@ -4,23 +4,23 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <nav
-    class="sticky top-0 z-10 flex h-16 w-full items-center bg-slate-900 p-10 text-slate-200 shadow-md shadow-slate-700 lg:container lg:mx-auto"
+    class="sticky top-0 z-10 flex h-16 w-full items-center bg-slate-900 p-10 text-slate-200 shadow-md shadow-slate-900 lg:container lg:mx-auto"
   >
-    <div id="header-logo" class="mr-5 flex shrink">
+    <div id="header-logo" class="flex shrink">
       <h1 class="text-3xl">Gest.AI</h1>
     </div>
-    <div id="header-links" class="flex flex-1 grow justify-center gap-x-6">
+    <div id="header-links" class="flex flex-1 justify-center grow gap-x-6">
       <RouterLink class="" to="/">Home</RouterLink>
       <RouterLink class="" to="/blog">Blog</RouterLink>
       <RouterLink class="" to="/about">Quem Somos</RouterLink>
     </div>
-    <div id="header-login" class="flex shrink justify-end gap-x-2">
+    <div id="header-login" class="flex shrink justify-end gap-x-6">
       <RouterLink to="/login">Entrar</RouterLink>
       <RouterLink to="/register">Cadastrar</RouterLink>
     </div>
   </nav>
 
-  <main class="flex min-h-screen bg-slate-800 p-10 text-slate-200 lg:container lg:mx-auto">
+  <main class="flex h-screen bg-slate-800 p-10 text-slate-200 lg:container lg:mx-auto">
     <RouterView />
   </main>
 
